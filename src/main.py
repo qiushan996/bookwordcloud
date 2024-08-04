@@ -21,7 +21,7 @@ def generate_wordcloud(words, word_freq, config, imgname):
   plt.figure(figsize=config.figsize)
   plt.imshow(wordcloud, interpolation=config.interpolation)
   plt.axis('off')
-  plt.tight_layout(pad=0)
+  plt.tight_layout(pad=1)
   #plt.show()
   plt.savefig(config.outputdir + imgname + ".png")
 
@@ -44,6 +44,6 @@ def main(bookpath):
 
 
 if __name__ == "__main__":
-   book_path = './books/基督山伯爵.txt'  # 请替换为你的TXT文件路径
+   book_path = './books/呼啸山庄.txt'  # 请替换为你的TXT文件路径
    main(book_path)
    
